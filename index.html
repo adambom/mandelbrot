@@ -180,7 +180,7 @@
 
                     <p>Everything you see is computed using javascript running in the browser. The visualization uses web workers to farm out the computations. We divide the plane into rectangular regions and assign the points contained in each region to a worker thread. This allows us to perform the computation in parallel, and prevents the main thread from blocking the UI while it's running.</p>
 
-                    <p>When each worker returns its results, that portion of the plane is drawn to a 500x500px canvas. <a href="https://github.com/mbostock/d3/wiki/Quantitative-Scales">D3's excellent scale functions</a> (using a linear scale) are used to map pixels to points on the complex plane and number of iterations to color.</p>
+                    <p>When each worker returns its results, that portion of the plane is drawn to a 500x500px canvas. <a href="https://github.com/mbostock/d3/wiki/Quantitative-Scales">D3's excellent scale functions</a> (using a log scale) are used to map pixels to points on the complex plane and number of iterations to color.</p>
                 </div>
             </div>
 
